@@ -1,28 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@500&display=swap');
 
+*       {box-sizing: border-box;}
+
 body    {background-color: #FCEBB6;
         background-image: url(images/fadedroad50.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
+	background-repeat: no-repeat;
+	background-size: cover;
 	background-attachment: fixed;
-        color: #221811;
+	color: #221811;
         font-family: 'El Messiri', Arial, sans-serif;}
 
-#wrapper{background-color: #FEFAEB;
-        margin-left: auto;
-        margin-right: auto;
-        width: 80%;
-        min-width: 900px;
-        max-width: 1280px;
-        box-shadow: 5px 5px 5px #5a4131;}
+#wrapper{background-color: #231814;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	min-width: 900px;
+	max-width: 1280px;
+	box-shadow: 3px 3px 3px #676767;
+	padding: 0;}
 
 header  {background-color: #D2B48C;
-        color: #8C3826;
-        text-align: center;
-        padding-top: 5px;
-        padding-bottom: 5px;}
+	background-image: url(images/coffeelogo.jpg);
+	background-repeat: no-repeat;
+	color: #231814;
+	padding-left: 240px;
+	padding-top: 5px;
+	padding-bottom: 5px;}
 
-h1      {font-size: 3em;}
+header a {text-decoration: none;}
+
+header a:link {color: #231814;}
+
+header a:visited {color: #231814;}
+
+header a:hover {color: #FEF6C2;}
+
+h1      {font-size: 2em;}
 
 h2      {color: #8C3826;}
 
@@ -31,31 +44,64 @@ h3,dt   {color: #8C3826;}
 h4      {background-color: #D2B48C;
         font-size: 1.2em;
         padding-left: .5em;
-        padding-bottom: .25em;}
-
+        padding-bottom: .25em;
+        text-transform: uppercase;
+	border-bottom: 1px solid #221811;
+	clear: left;}
+     
 nav     {text-align: center;
-        font-weight: bold;
         font-size: 1.5em;
-        padding-top: 5px;
-        padding-bottom: 5px;}
+        float: left;
+        width: 200px;}
 
 nav a   {text-decoration: none;}
 
-main    {display: block;
-        padding-left: 2em;
-        padding-right: 2em;
-        padding-bottom: 2em;}
+nav a:link {color: #FEF6C2;}
+
+nav a:visited {color: #D2B48C;}
+
+nav a:hover {color: #CC9933;}
+
+nav ul  {list-style-type: none;
+	padding-left: 0;}
+
+main    {background-color: #FEF6C2;
+	display: block;
+	margin-left: 200px;
+	padding: 0 0 2em 0;
+        overflow: auto;}
+
+main h2,h3,h4,p,div,ul,dl
+        {padding-left: 3em;
+        padding-right: 2em;}
 
 .details {padding-left: 20%;
         padding-right: 20%;}
+
+.floatleft {float: left;
+        padding-right: 2em;
+        padding-bottom: 2em;}
+
+.onethird {float: left;
+        width: 33%;}
 
 img     {border-style: none;
         max-width: 100%;
         height: auto;}
 
-#homehero{height: 300px;
+#homehero {height: 300px;
         background-image: url(images/hero.jpg);
-        background-size: cover;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;}
+
+#heromugs {height: 300px;
+        background-image: url(images/heromugs.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;}
+
+#heroguitar {height: 300px;
+        background-image: url(images/heroguitar.jpg);
+        background-size: 100% 100%;
         background-repeat: no-repeat;}
         
 footer  {background-color: #D2B48C;
@@ -64,4 +110,3 @@ footer  {background-color: #D2B48C;
         font-style: italic;
         padding: 1em;
         border-top: 2px #8C3826;}
-
