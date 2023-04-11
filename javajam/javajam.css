@@ -55,15 +55,19 @@ nav a:visited {color: #D2B48C;}
 nav a:hover {color: #CC9933;}
 
 nav ul  {list-style-type: none;
-        display: flex;
-        flex-direction: column;
+        /* display: flex;
+        flex-direction: column; */
 	padding: 0;
         margin: 0;
         font-size: 1.25em;}
 
-nav li  {padding: .5em 1em .5em 1em;
-        width: 100%;
+nav li  {/* padding: .5em 1em .5em 1em;
+        width: 100%; */
         border-bottom: solid;}
+
+nav li a {display: flex;
+        flex-direction: column;
+        padding: .5em 1em;}
 
 main    {background-color: #FEF6C2;
 	display: block;
@@ -98,6 +102,16 @@ img     {border-style: none;
         background-size: 100% 100%;
         background-repeat: no-repeat;}
 
+#herocouch {height: 300px;
+        background-image: url(images/herocouch.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;}
+
+#herojobs {height: 300px;
+        background-image: url(images/coffeecup.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;}
+
 #mobile {display: inline;}
 
 #desktop{display: none;}
@@ -116,16 +130,22 @@ th, td  {padding: 10px}
 
 tr:nth-of-type(odd) {background-color: #D2B48E;}
 
-#herojobs {height: 300px;
-        background-image: url(images/coffeecup.jpg);
-        background-repeat: no-repeat;
-        background-size: 100% 100%;}
+
 
 form    {display: flex;
         flex-direction: column;
         padding-left: 1em; width: 80%;}
 
 input, textarea {margin-bottom: .5em;}
+
+.item   {background-color: #FAF9F7;
+        margin: 1em;
+        padding: 1em;
+        overflow: auto;}
+
+.item img {float: right;}
+
+.current {background-color: #362416;}
 
 /*Medium Layout*/
 @media(min-width: 600px){
@@ -150,7 +170,7 @@ input, textarea {margin-bottom: .5em;}
         #heroguitar 
                 {background-image: url(images/heroguitar.jpg);}
 
-        #flow   {display: flow;
+        #flow   {display: flex;
                 flex-direction: row;}
         
         #mobile {display: none;}
@@ -172,6 +192,8 @@ input, textarea {margin-bottom: .5em;}
                 grid-column: 2 / 3;
                 width: 9em;}
         #herojobs {background-image: url(images/herojobs.jpg);}
+
+        .current {background-color: #362416;}
 }
 
 /*Large Layout*/
@@ -195,5 +217,7 @@ input, textarea {margin-bottom: .5em;}
 
         header  {background-image: url(images/coffeelogo.jpg);}
 
+        .current {text-align: left;
+                background-color: #362416;}
         }
 }
