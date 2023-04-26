@@ -316,9 +316,13 @@ h6 {
 }
 
 @media (max-width: 1366px) {
+  .header-social-links {
+    padding-left: 30px;
+  }
+
   .header-social-links form {
     display: inline-block;
-    padding-left: 0px;
+    padding-left: 3px;
   }
   
   .navbar {
